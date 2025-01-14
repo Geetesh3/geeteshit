@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1 id="hi">Hello</h1>
+    <h2 class="class"></h2>
+    <div class="nametoalert">
+        <input type="text" name="name" id="name" >
+        <button onclick="namealert()">GO</button>
+    </div>
+    <form>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="pwd">Password:</label><br>
+        <input type="password" id="pwd" name="pwd">
+      </form>
+</body> 
+   <script>
+        // document.write("Hello Geetsh");
+        console.log("Hi Geetesh");
+        //prompt("Hi your name is","Somthing");
+        var x=document.getElementById("hi");
+        console.log(x);
+        var y=8;
+        var z=9;
+        var w=y*z;  
+        document.getElementsByClassName('class')[0].innerHTML=w;
+        // window.alert("Hi");
+        function namealert(){
+        var name= document.getElementById('name').value;
+        alert(name);
+        }
+    </script>
+</html>

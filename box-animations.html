@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Animations</title>
+    <style>
+        * {
+            background-color: rgb(27, 23, 23);
+        }
+
+        .box1 {
+            border-color: rgba(248, 17, 17, 0.5);
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255, 0, 0);
+            position: relative;
+            transition: width 2s, height 2s, background-color 2s, transform 2s;
+            margin: -110px 0px 0px 0px;
+            animation-name: box1-come;
+            animation-delay: 2s;
+            animation-duration: 5s;
+            animation-direction: normal;
+            animation-timing-function: ease-in;
+            animation-fill-mode: forwards;
+        }
+
+        .box1:hover {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(0, 255, 0);
+            transform: rotate(180deg);
+        }
+
+        @keyframes box1-come {
+            0% {
+                margin: -110px 0px 0px 0px;
+            }
+
+            100% {
+                margin: -10px 0px 0px -2px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+</body>
+
+</html>
